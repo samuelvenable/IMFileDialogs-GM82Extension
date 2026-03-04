@@ -1,8 +1,16 @@
 #define libfiledialogs_init
 file_copy(temp_directory + "\libfiledialogs\SDL3.dll", working_directory + "\SDL3.dll");
-global.dll_ifd_load_fonts = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_load_fonts", 0, ty_real, 1, ty_string);
+global.dll_ifd_load_fonts = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_load_fonts", 0, ty_real, 2, ty_string, ty_real);
 global.dll_ifd_get_parent = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_parent", 0, ty_string, 0);
 global.dll_ifd_set_parent = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_parent", 0, ty_real, 1, ty_string);
+global.dll_ifd_get_showborder = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_showborder", 0, ty_real, 0);
+global.dll_ifd_set_showborder = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_showborder", 0, ty_real, 1, ty_real);
+global.dll_ifd_get_caption = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_caption", 0, ty_string, 0);
+global.dll_ifd_set_caption = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_caption", 0, ty_real, 1, ty_string);
+global.dll_ifd_get_width = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_width", 0, ty_real, 0);
+global.dll_ifd_set_width = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_width", 0, ty_real, 1, ty_real);
+global.dll_ifd_get_height = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_height", 0, ty_real, 0);
+global.dll_ifd_set_height = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_height", 0, ty_real, 1, ty_real)
 global.dll_ifd_get_theme = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_get_theme", 0, ty_string, 0);
 global.dll_ifd_set_theme = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_set_theme", 0, ty_real, 1, ty_string);
 global.dll_ifd_easy_theming_text_color = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_easy_theming_text_color", 0, ty_real, 3, ty_real, ty_real, ty_real);
@@ -23,8 +31,35 @@ global.dll_get_save_filename = external_define(temp_directory + "\libfiledialogs
 global.dll_get_save_filename_ext = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_save_filename_ext", 0, ty_string, 4, ty_string, ty_string, ty_string, ty_string);
 global.dll_get_directory = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_directory", 0, ty_string, 1, ty_string);
 global.dll_get_directory_alt = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_directory_alt", 0, ty_string, 2, ty_string, ty_string);
-external_call(global.dll_ifd_load_fonts, "C:\Windows\Fonts\segoeui.ttf");
+external_call(global.dll_ifd_load_fonts, "C:\Windows\Fonts\segoeui.ttf" + chr(10) + "C:\Windows\Fonts\msyh.ttc", 20);
 external_call(global.dll_ifd_set_parent, string(window_handle()));
+
+#define ifd_load_fonts
+return external_call(global.dll_ifd_load_fonts, string(argument0), real(argument1));
+
+#define ifd_get_showborder
+return external_call(global.dll_ifd_get_showborder);
+
+#define ifd_set_showborder
+return external_call(global.dll_ifd_set_showborder, real(argument0));
+
+#define ifd_get_caption
+return external_call(global.dll_ifd_get_caption);
+
+#define ifd_set_caption
+return external_call(global.dll_ifd_set_caption, string(argument0));
+
+#define ifd_get_width
+return external_call(global.dll_ifd_get_width);
+
+#define ifd_set_width
+return external_call(global.dll_ifd_set_width, real(argument0));
+
+#define ifd_get_height
+return external_call(global.dll_ifd_get_height);
+
+#define ifd_set_height
+return external_call(global.dll_ifd_set_height, real(argument0));
 
 #define ifd_get_theme
 return external_call(global.dll_ifd_get_theme);

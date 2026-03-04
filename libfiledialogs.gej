@@ -226,6 +226,33 @@
 					"returntype": 2
 				},
 				{
+					"name": "ifd_get_caption",
+					"extname": "ifd_get_caption",
+					"calltype": 2,
+					"helpline": "ifd_get_caption()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_get_height",
+					"extname": "ifd_get_height",
+					"calltype": 2,
+					"helpline": "ifd_get_height()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_get_showborder",
+					"extname": "ifd_get_showborder",
+					"calltype": 2,
+					"helpline": "ifd_get_showborder()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
 					"name": "ifd_get_theme",
 					"extname": "ifd_get_theme",
 					"calltype": 2,
@@ -235,10 +262,75 @@
 					"returntype": 2
 				},
 				{
+					"name": "ifd_get_width",
+					"extname": "ifd_get_width",
+					"calltype": 2,
+					"helpline": "ifd_get_width()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_load_fonts",
+					"extname": "ifd_load_fonts",
+					"calltype": 2,
+					"helpline": "ifd_load_fonts(fnames,size)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_set_caption",
+					"extname": "ifd_set_caption",
+					"calltype": 2,
+					"helpline": "ifd_set_caption(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_set_height",
+					"extname": "ifd_set_height",
+					"calltype": 2,
+					"helpline": "ifd_set_height(height)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_set_showborder",
+					"extname": "ifd_set_showborder",
+					"calltype": 2,
+					"helpline": "ifd_set_showborder(show)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
 					"name": "ifd_set_theme",
 					"extname": "ifd_set_theme",
 					"calltype": 2,
 					"helpline": "ifd_set_theme(theme)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_set_width",
+					"extname": "ifd_set_width",
+					"calltype": 2,
+					"helpline": "ifd_set_width(width)",
 					"hidden": false,
 					"argtypes": [
 						2
