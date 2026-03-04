@@ -31,6 +31,32 @@ global.dll_get_save_filename = external_define(temp_directory + "\libfiledialogs
 global.dll_get_save_filename_ext = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_save_filename_ext", 0, ty_string, 4, ty_string, ty_string, ty_string, ty_string);
 global.dll_get_directory = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_directory", 0, ty_string, 1, ty_string);
 global.dll_get_directory_alt = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "get_directory_alt", 0, ty_string, 2, ty_string, ty_string);
+global.dll_ifd_localization_quick_access = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_quick_access", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_this_pc = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_this_pc", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_all_files = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_all_files", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_name = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_name", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_date_modified = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_date_modified", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_size = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_size", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_new_file = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_new_file", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_new_directory = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_new_directory", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_delete = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_delete", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_are_you_sure = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_are_you_sure", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_overwrite_file = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_overwrite_file", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_enter_file_name = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_enter_file_name", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_enter_directory_name = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_enter_directory_name", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_are_you_sure_you_want_to_delete = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_are_you_sure_you_want_to_delete", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_are_you_sure_you_want_to_overwrite = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_are_you_sure_you_want_to_overwrite", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_yes = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_yes", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_no = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_no", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_ok = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_ok", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_cancel = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_cancel", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_search = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_search", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_file_name_with_colon = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_file_name_with_colon", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_file_name_without_colon = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_file_name_without_colon", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_directory_name_with_colon = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_directory_name_with_colon", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_directory_name_without_colon = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_directory_name_without_colon", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_save = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_save", 0, ty_real, 1, ty_string);
+global.dll_ifd_localization_open = external_define(temp_directory + "\libfiledialogs\libfiledialogs.dll", "ifd_localization_open", 0, ty_real, 1, ty_string);
 external_call(global.dll_ifd_load_fonts, "C:\Windows\Fonts\segoeui.ttf" + chr(10) + "C:\Windows\Fonts\msyh.ttc", 20);
 external_call(global.dll_ifd_set_parent, string(window_handle()));
 
@@ -120,3 +146,81 @@ return external_call(global.dll_get_directory, string(argument0));
 
 #define get_directory_alt
 return external_call(global.dll_get_directory_alt, string(argument0), string(argument1));
+
+#define ifd_localization_quick_access
+return external_call(global.dll_ifd_localization_quick_access, string(argument0));
+
+#define ifd_localization_this_pc
+return external_call(global.dll_ifd_localization_this_pc, string(argument0));
+
+#define ifd_localization_all_files
+return external_call(global.dll_ifd_localization_all_files, string(argument0));
+
+#define ifd_localization_name
+return external_call(global.dll_ifd_localization_name, string(argument0));
+
+#define ifd_localization_date_modified
+return external_call(global.dll_ifd_localization_date_modified, string(argument0));
+
+#define ifd_localization_size
+return external_call(global.dll_ifd_localization_size, string(argument0));
+
+#define ifd_localization_new_file
+return external_call(global.dll_ifd_localization_new_file, string(argument0));
+
+#define ifd_localization_new_directory
+return external_call(global.dll_ifd_localization_new_directory, string(argument0));
+
+#define ifd_localization_delete
+return external_call(global.dll_ifd_localization_delete, string(argument0));
+
+#define ifd_localization_are_you_sure
+return external_call(global.dll_ifd_localization_are_you_sure, string(argument0));
+
+#define ifd_localization_overwrite_file
+return external_call(global.dll_ifd_localization_overwrite_file, string(argument0));
+
+#define ifd_localization_enter_file_name
+return external_call(global.dll_ifd_localization_enter_file_name, string(argument0));
+
+#define ifd_localization_enter_directory_name
+return external_call(global.dll_ifd_localization_enter_directory_name, string(argument0));
+
+#define ifd_localization_are_you_sure_you_want_to_delete
+return external_call(global.dll_ifd_localization_are_you_sure_you_want_to_delete, string(argument0));
+
+#define ifd_localization_are_you_sure_you_want_to_overwrite
+return external_call(global.dll_ifd_localization_are_you_sure_you_want_to_overwrite, string(argument0));
+
+#define ifd_localization_yes
+return external_call(global.dll_ifd_localization_yes, string(argument0));
+
+#define ifd_localization_no
+return external_call(global.dll_ifd_localization_no, string(argument0));
+
+#define ifd_localization_ok
+return external_call(global.dll_ifd_localization_ok, string(argument0));
+
+#define ifd_localization_cancel
+return external_call(global.dll_ifd_localization_cancel, string(argument0));
+
+#define ifd_localization_search
+return external_call(global.dll_ifd_localization_search, string(argument0));
+
+#define ifd_localization_file_name_with_colon
+return external_call(global.dll_ifd_localization_file_name_with_colon, string(argument0));
+
+#define ifd_localization_file_name_without_colon
+return external_call(global.dll_ifd_localization_file_name_without_colon, string(argument0));
+
+#define ifd_localization_directory_name_with_colon
+return external_call(global.dll_ifd_localization_directory_name_with_colon, string(argument0));
+
+#define ifd_localization_directory_name_without_colon
+return external_call(global.dll_ifd_localization_directory_name_without_colon, string(argument0));
+
+#define ifd_localization_save
+return external_call(global.dll_ifd_localization_save, string(argument0));
+
+#define ifd_localization_open
+return external_call(global.dll_ifd_localization_open, string(argument0));

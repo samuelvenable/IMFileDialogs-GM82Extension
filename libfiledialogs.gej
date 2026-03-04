@@ -283,6 +283,292 @@
 					"returntype": 2
 				},
 				{
+					"name": "ifd_localization_all_files",
+					"extname": "ifd_localization_all_files",
+					"calltype": 2,
+					"helpline": "ifd_localization_all_files(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_are_you_sure",
+					"extname": "ifd_localization_are_you_sure",
+					"calltype": 2,
+					"helpline": "ifd_localization_are_you_sure(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_are_you_sure_you_want_to_delete",
+					"extname": "ifd_localization_are_you_sure_you_want_to_delete",
+					"calltype": 2,
+					"helpline": "ifd_localization_are_you_sure_you_want_to_delete(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_are_you_sure_you_want_to_overwrite",
+					"extname": "ifd_localization_are_you_sure_you_want_to_overwrite",
+					"calltype": 2,
+					"helpline": "ifd_localization_are_you_sure_you_want_to_overwrite(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_cancel",
+					"extname": "ifd_localization_cancel",
+					"calltype": 2,
+					"helpline": "ifd_localization_cancel(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_date_modified",
+					"extname": "ifd_localization_date_modified",
+					"calltype": 2,
+					"helpline": "ifd_localization_date_modified(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_delete",
+					"extname": "ifd_localization_delete",
+					"calltype": 2,
+					"helpline": "ifd_localization_delete(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_directory_name_without_colon",
+					"extname": "ifd_localization_directory_name_without_colon",
+					"calltype": 2,
+					"helpline": "ifd_localization_directory_name_without_colon(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_directory_name_with_colon",
+					"extname": "ifd_localization_directory_name_with_colon",
+					"calltype": 2,
+					"helpline": "ifd_localization_directory_name_with_colon(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_enter_directory_name",
+					"extname": "ifd_localization_enter_directory_name",
+					"calltype": 2,
+					"helpline": "ifd_localization_enter_directory_name(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_enter_file_name",
+					"extname": "ifd_localization_enter_file_name",
+					"calltype": 2,
+					"helpline": "ifd_localization_enter_file_name(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_file_name_without_colon",
+					"extname": "ifd_localization_file_name_without_colon",
+					"calltype": 2,
+					"helpline": "ifd_localization_file_name_without_colon(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_file_name_with_colon",
+					"extname": "ifd_localization_file_name_with_colon",
+					"calltype": 2,
+					"helpline": "ifd_localization_file_name_with_colon(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_name",
+					"extname": "ifd_localization_name",
+					"calltype": 2,
+					"helpline": "ifd_localization_name(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_new_directory",
+					"extname": "ifd_localization_new_directory",
+					"calltype": 2,
+					"helpline": "ifd_localization_new_directory(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_new_file",
+					"extname": "ifd_localization_new_file",
+					"calltype": 2,
+					"helpline": "ifd_localization_new_file(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_no",
+					"extname": "ifd_localization_no",
+					"calltype": 2,
+					"helpline": "ifd_localization_no(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_ok",
+					"extname": "ifd_localization_ok",
+					"calltype": 2,
+					"helpline": "ifd_localization_ok(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_open",
+					"extname": "ifd_localization_open",
+					"calltype": 2,
+					"helpline": "ifd_localization_open(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_overwrite_file",
+					"extname": "ifd_localization_overwrite_file",
+					"calltype": 2,
+					"helpline": "ifd_localization_overwrite_file(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_quick_access",
+					"extname": "ifd_localization_quick_access",
+					"calltype": 2,
+					"helpline": "ifd_localization_quick_access(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_save",
+					"extname": "ifd_localization_save",
+					"calltype": 2,
+					"helpline": "ifd_localization_save(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_search",
+					"extname": "ifd_localization_search",
+					"calltype": 2,
+					"helpline": "ifd_localization_search(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_size",
+					"extname": "ifd_localization_size",
+					"calltype": 2,
+					"helpline": "ifd_localization_size(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_this_pc",
+					"extname": "ifd_localization_this_pc",
+					"calltype": 2,
+					"helpline": "ifd_localization_this_pc(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "ifd_localization_yes",
+					"extname": "ifd_localization_yes",
+					"calltype": 2,
+					"helpline": "ifd_localization_yes(str)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
 					"name": "ifd_set_caption",
 					"extname": "ifd_set_caption",
 					"calltype": 2,
