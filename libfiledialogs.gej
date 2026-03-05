@@ -1,9 +1,9 @@
 {
 	"name": "Dear ImGui File Dialogs",
-	"folder": "libfiledialogs",
+	"folder": "gm82",
 	"version": "1.0.0.0",
 	"author": "Samuel Venable",
-	"date": "3/4/2026",
+	"date": "3/5/2026",
 	"license": "MIT License.",
 	"description": "Create Dear ImGui Dialog Boxes, (Both File Selection and Beyond), in GameMaker.",
 	"helpfile": "",
